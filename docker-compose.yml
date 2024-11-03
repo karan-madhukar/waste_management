@@ -1,0 +1,20 @@
+services:
+  app:
+    build: . #shorthand for file name Dockerfile in the current context/dir
+    depends_on: 
+      - db
+    ports:
+      - "4000:4000"
+
+  db:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: waste_management_dev
+    # No ports mapping, as it's used internally only
+    volumes:
+      - postgres_data:/var/lib/postgresql/data  # Persisting data
+
+volumes:
+  postgres_data:  
