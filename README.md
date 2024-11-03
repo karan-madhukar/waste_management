@@ -4,7 +4,8 @@ Getting Started
 To start your Phoenix server, follow these steps:
 
 Prerequisites
-  * Ensure that Docker is installed on your machine. You can download it from Docker's official website.
+  * Ensure that Docker is installed on your machine. You can download it from [Docker's official website](https://www.docker.com/).
+    
 Starting the Server
   1. Open your terminal.
   2. Navigate to the project directory.
