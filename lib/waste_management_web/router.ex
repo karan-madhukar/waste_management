@@ -17,7 +17,8 @@ defmodule WasteManagementWeb.Router do
   scope "/", WasteManagementWeb do
     pipe_through :browser
 
-    get "/", PageController, :home
+    get "/", UserController, :index
+    resources "/users", UserController
   end
 
   # Other scopes may use custom stacks.
